@@ -258,7 +258,7 @@ footer {
 
   .bar {
     width: 50px;
-    height: auto !important;
+    height: 10px;
     border-radius: 6px;
     background: linear-gradient(90deg, #7cbf64, #4c9141);
     flex: none;
