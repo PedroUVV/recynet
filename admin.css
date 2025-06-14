@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f4fdf4;
+  color: #2e2e2e;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* Header com GRADIENTE */
+.header {
+  background: linear-gradient(90deg, #7cbf64, #4c9141);
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: 2rem;
+}
+
+.header p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Cards como BOTÕES com ÍCONES */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  flex: 1 1 240px;
+  background-color: white;
+  padding: 1.5rem;
+  border-left: 6px solid #7cbf64;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, background-color 0.3s;
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: #e7fbe1;
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+  color: #4c9141;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card h3::before {
+  content: "🌿";
+  font-size: 1.2rem;
+}
+
+/* GRÁFICO com gradiente */
+.grafico h2 {
+  margin-bottom: 1rem;
+  color: #4c9141;
+}
+
+.bar-chart {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-end;
+  height: 200px;
+  margin-bottom: 2rem;
+  background: linear-gradient(180deg, #ebf5e7, #d9f2d3);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.bar {
+  flex: 1;
+  background: linear-gradient(180deg, #7cbf64, #4c9141);
+  height: 50%;
+  position: relative;
+  border-radius: 6px 6px 0 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  transition: height 0.6s ease;
+}
+
+.bar span {
+  position: absolute;
+  bottom: -1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Tabela */
+.tabela-relatorio h2 {
+  margin-bottom: 1rem;
+  color: #4c9141;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+  background-color: #d9f2d3;
+  font-weight: 600;
+  color: #2f6627;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #d9f2d3;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 2rem;
+}
+
+/* === NAVBAR === */
+.navbar {
+  background: linear-gradient(90deg, #7cbf64, #4c9141);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.nav-logo {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.menu-toggle {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  display: none;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background: white;
+  width: 0;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #4c9141;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+  .nav-links li {
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .bar-chart {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .bar {
+    width: 80%;
+    height: 30px !important;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    background: linear-gradient(90deg, #7cbf64, #4c9141);
+  }
+
+  .bar span {
+    position: relative;
+    bottom: auto;
+    color: white;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RecyNet - Recompensas</title>
+  <link rel="stylesheet" href="recompensas.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">♻ RecyNet ♻</div>
+
+    <div class="menu-centro">
+      <a href="locais.html" class="botao">Locais de Coleta</a>
+      <a href="relatorio.html" class="botao">Relatório</a>
+      <a href="pontuacao.html" class="botao">Pontuação</a>
+      <a href="noticias.html" class="botao">Notícias</a>
+      <a href="recompensas.html" class="botao ativo">Recompensas</a>
+    </div>
+
+    <div class="menu-direita">
+      <a href="cooperado.html">Home</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="perfil.html">Perfil</a>
+      <a href="recynet.html">Sair</a>
+    </div>
+  </nav>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <h1 class="titulo">Recompensas Disponíveis</h1>
+    <p class="saldo">Seu saldo: <strong>6602 pontos</strong></p>
+
+    <div class="recompensas-grid">
+      <div class="recompensa-card">
+        <img src="camiseta sustentavel.png" alt="Camiseta Sustentável">
+        <h2>Camiseta Sustentável</h2>
+        <p>200 pontos</p>
+        <button onclick="resgatar('Camiseta Sustentável', 200)">Resgatar</button>
+      </div>
+
+      <div class="recompensa-card">
+        <img src="xbox series s.png" alt="Console Xbox">
+        <h2>Console Xbox</h2>
+        <p>100.000 pontos</p>
+        <button onclick="resgatar('Console Xbox', 100000)">Resgatar</button>
+      </div>
+
+      <div class="recompensa-card">
+        <img src="caneca-ecologica-personalizada.png" alt="Caneca Ecológica">
+        <h2>Caneca Ecológica</h2>
+        <p>120 pontos</p>
+        <button onclick="resgatar('Caneca Ecológica', 120)">Resgatar</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>© 2025 Fortes Engenharia - Projeto RecyNet</p>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    const paginaAtual = window.location.pathname.split("/").pop();
+    document.querySelectorAll('.botao').forEach(link => {
+      if (link.getAttribute("href") === paginaAtual) {
+        link.classList.add("ativo");
+      }
+    });
+
+    function resgatar(item, custo) {
+      const saldoAtual = 6602;
+      if (custo > saldoAtual) {
+        alert("Você não tem pontos suficientes para resgatar " + item + ".");
+      } else {
+        const confirmar = confirm("Deseja realmente resgatar " + item + " por " + custo + " pontos?");
+        if (confirmar) {
+          alert("Parabéns! Você resgatou: " + item + ". Seu novo saldo será: " + (saldoAtual - custo) + " pontos.");
+        }
+      }
+    }
+  </script>
+</body>
+</html>

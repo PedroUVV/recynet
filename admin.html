@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RecyNet - Painel Admin</title>
+  <link rel="stylesheet" href="admin.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container nav-container">
+    <h2 class="nav-logo">RecyNet</h2>
+    <button class="menu-toggle" id="menuToggle">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="locais.html">Locais de Coleta</a></li>
+      <li><a href="pontuacao.html">Pontuação</a></li>
+      <li><a href="recompensas.html">Recompensas</a></li>
+      <li><a href="noticias.html">Notícias</a></li>
+      <li><a href="relatorio.html">Relatório</a></li>
+      <li><a href="perfil-admin.html">Perfil</a></li>
+    </ul>
+  </div>
+</nav>
+
+  <header class="header">
+    <div class="container">
+      <h1>RecyNet - Painel do Administrador</h1>
+      <p>Bem-vindo, admin@fortes.com.br</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Indicadores principais -->
+    <section class="cards">
+      <div class="card">
+        <h3>Cooperativas</h3>
+        <p>--</p>
+      </div>
+      <div class="card">
+        <h3>Locais de Coleta</h3>
+        <p>--</p>
+      </div>
+      <div class="card">
+        <h3>Pontos Acumulados</h3>
+        <p>--</p>
+      </div>
+      <div class="card">
+        <h3>Usuários Ativos</h3>
+        <p>--</p>
+      </div>
+    </section>
+
+    <!-- Gráfico de reciclagem -->
+    <section class="grafico">
+      <h2>Materiais Reciclados (kg)</h2>
+      <div class="bar-chart">
+        <div class="bar"><span>Papel</span></div>
+        <div class="bar"><span>Plástico</span></div>
+        <div class="bar"><span>Vidro</span></div>
+        <div class="bar"><span>Metal</span></div>
+        <div class="bar"><span>Eletrônico</span></div>
+
+      </div>
+    </section>
+
+    <!-- Tabela de atividades -->
+    <section class="tabela-relatorio">
+      <h2>Últimos Registros de Coleta</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Cooperativa</th>
+            <th>Material</th>
+            <th>Quantidade (kg)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>13/06/2025</td>
+            <td>CoopNova</td>
+            <td>Papel</td>
+            <td>120</td>
+          </tr>
+          <tr>
+            <td>12/06/2025</td>
+            <td>VerdeVida</td>
+            <td>Plástico</td>
+            <td>200</td>
+          </tr>
+          <tr>
+            <td>11/06/2025</td>
+            <td>EcoForte</td>
+            <td>Vidro</td>
+            <td>80</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Fortes Engenharia - Projeto RecyNet</p>
+  </footer>
+
+  <script src="admin.js"></script>
+</body>
+</html>

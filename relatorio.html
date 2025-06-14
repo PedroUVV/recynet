@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RecyNet - Relatório</title>
+  <link rel="stylesheet" href="relatorio.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <nav class="navbar">
+  <div class="nav-esquerda">
+    <div class="logo">♻ RecyNet ♻</div>
+  </div>
+
+  <div class="menu">
+    <a href="locais.html" class="botao">Locais de Coleta</a>
+    <a href="relatorio.html" class="botao ativo">Relatório</a>
+    <a href="pontuacao.html" class="botao">Pontuação</a>
+    <a href="noticias.html" class="botao">Notícias</a>
+    <a href="recompensas.html" class="botao">Recompensas</a>
+  </div>
+
+  <div class="nav-direita">
+    <a href="index.html">Home</a>
+    <a href="servicos.html">Serviços</a>
+    <a href="perfil.html">Perfil</a>
+    <a href="recynet.html">Sair</a>
+  </div>
+</nav>
+
+
+  <main class="container">
+    <h1 class="titulo">Relatório</h1>
+    <p class="subtitulo">Acompanhe sua jornada de reciclagem.</p>
+
+    <div class="painel">
+
+      <!-- Ranking -->
+      <section class="ranking">
+        <h2>Ranking Estadual</h2>
+        <p class="mensagem">Você está em primeiro lugar, parabéns!</p>
+        <ul>
+          <li>(Usuário) 1º Lugar - 250 kg</li>
+          <li>Edgar UVV 2º Lugar - 230 kg</li>
+          <li>Fabiana 3º Lugar - 200 kg</li>
+          <li>Renato 4º Lugar - 142 kg</li>
+          <li>João Vyctor 5º Lugar - 100 kg</li>
+          <li>Erick Dias 6º Lugar - 69 kg</li>
+        </ul>
+      </section>
+
+      <!-- Gráficos -->
+      <section class="grafico">
+        <h2>Relatório de Reciclagem</h2>
+
+        <div class="filtros">
+          <label for="mes">Mês:</label>
+          <select id="mes">
+            <option value="0">Janeiro</option>
+            <option value="1">Fevereiro</option>
+            <option value="2">Março</option>
+            <option value="3">Abril</option>
+            <option value="4">Maio</option>
+            <option value="5"selected>Junho</option>
+          </select>
+
+          <label for="ano">Ano:</label>
+          <select id="ano">
+            <option value="2025" selected>2025</option>
+            <option value="2024">2024</option>
+          </select>
+        </div>
+
+        <canvas id="graficoBarras"></canvas>
+        <canvas id="graficoLinha" style="margin-top: 2rem;"></canvas>
+
+        <p class="pontos">6602 Pontos</p>
+        <a href="#" id="btnBaixar" class="botao-baixar">📄 Baixar Relatório</a>
+
+        <div class="materiais">
+          <h3>Lista de Materiais Reciclados</h3>
+          <ul>
+            <li>100 kg Plástico</li>
+            <li>50 kg Papel</li>
+            <li>50 kg Eletrônicos</li>
+            <li>25 kg Vidro</li>
+            <li>25 kg Metal</li>
+          </ul>
+        </div>
+
+        <a href="cooperado.html" class="inicio">Início</a>
+      </section>
+    </div>
+  </main>
+
+  <script src="relatorio.js"></script>
+</body>
+</html>

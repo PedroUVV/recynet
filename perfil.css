@@ -1,0 +1,156 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #7cbf64;
+  color: #1b5e20;
+  min-height: 100vh;
+}
+
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  background: #81c784;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 20px 30px;
+  gap: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1b5e20;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-self: start;
+}
+
+.menu-centro {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-self: center;
+}
+
+.menu-centro .botao {
+  background: #e8f5e9;
+  color: #2e7d32;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.menu-centro .botao:hover {
+  background: #c8e6c9;
+}
+
+.menu-centro .botao.ativo {
+  background: #2e7d32;
+  color: white;
+}
+
+.menu-direita {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-self: end;
+}
+
+.menu-direita a {
+  text-decoration: none;
+  color: #0d47a1;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.menu-direita a:hover {
+  text-decoration: underline;
+}
+
+.menu-direita a.ativo {
+  text-decoration: underline;
+  color: #0d47a1;
+}
+
+/* CONTEÚDO DO PERFIL */
+.perfil-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.titulo {
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  color: #1b5e20;
+}
+
+.info {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #2e7d32;
+}
+
+.botoes {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.botao-acao {
+  background: #2e7d32;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.botao-acao:hover {
+  background: #1b5e20;
+}
+
+footer {
+  margin-top: 50px;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #1b5e20;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .logo,
+  .menu-centro,
+  .menu-direita {
+    justify-self: center;
+  }
+
+  .perfil-container {
+    padding: 20px 15px;
+  }
+}
