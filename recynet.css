@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body, html {
   margin: 0;
   padding: 0;
@@ -62,10 +66,12 @@ button:hover {
 .options {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 0.9rem;
   margin-top: 8px;
   margin-bottom: 10px;
 }
+
 
 .options a {
   color: #1b5e20;
@@ -115,6 +121,7 @@ button:hover {
   text-decoration: none;
 }
 
+/* RESPONSIVO */
 @media (max-width: 400px) {
   .login-container {
     padding: 20px 15px;
