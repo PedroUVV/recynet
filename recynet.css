@@ -69,13 +69,16 @@ button:hover {
   justify-content: space-between;
   align-items: center;
   font-size: 0.9rem;
+  margin-top: 8px;
+  margin-bottom: 10px;
 }
 
 .options label {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 6px;
 }
+
 
 .options a {
   color: #1b5e20;
