@@ -95,34 +95,36 @@ main {
 }
 
 /* ========== TABELA DE MATERIAIS ========== */
+.tabela-container {
+  overflow-x: auto;
+}
+
 .tabela-materiais {
   width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
+  min-width: 600px;
   border-collapse: collapse;
+  margin-top: 20px;
   background: white;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
-  font-size: 1rem;
-  table-layout: fixed;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .tabela-materiais thead {
   background-color: #2e7d32;
+}
+
+.tabela-materiais th {
   color: white;
-}
-
-.tabela-materiais th,
-.tabela-materiais td {
+  text-align: left;
   padding: 15px;
-  text-align: center;
-  border-bottom: 1px solid #e0e0e0;
-  width: 50%;
+  font-size: 1rem;
 }
 
-.tabela-materiais tbody tr:last-child td {
-  border-bottom: none;
+.tabela-materiais td {
+  padding: 16px 15px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 0.95rem;
 }
 
 .tabela-materiais tr:hover {
@@ -131,24 +133,29 @@ main {
 
 /* ========== RESPONSIVO ========== */
 @media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .logo,
   .menu-centro,
   .menu-direita {
-    justify-content: center;
-  }
-
-  .navbar {
-    padding: 15px;
-    text-align: center;
-  }
-
-  .logo {
     justify-content: center;
     width: 100%;
   }
 
-  .tabela-materiais th,
-  .tabela-materiais td {
-    padding: 12px 8px;
-    font-size: 0.95rem;
+  .titulo {
+    font-size: 1.6rem;
+  }
+
+  .subtitulo {
+    font-size: 1rem;
+  }
+
+  .tabela-materiais {
+    font-size: 0.9rem;
   }
 }
