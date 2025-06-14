@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background: #7cbf64; /* fundo verde pedido */
+  background: #7cbf64;
   color: #1b5e20;
   min-height: 100vh;
 }
@@ -97,29 +97,30 @@ main {
 /* ========== TABELA DE MATERIAIS ========== */
 .tabela-materiais {
   width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
   border-collapse: collapse;
-  margin-top: 20px;
   background: white;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
 }
 
 .tabela-materiais thead {
   background-color: #2e7d32;
-}
-
-.tabela-materiais th {
   color: white;
-  text-align: left;
-  padding: 15px;
-  font-size: 1rem;
 }
 
+.tabela-materiais th,
 .tabela-materiais td {
-  padding: 12px 15px;
+  padding: 15px;
+  text-align: center;
   border-bottom: 1px solid #e0e0e0;
-  font-size: 0.95rem;
+}
+
+.tabela-materiais tbody tr:last-child td {
+  border-bottom: none;
 }
 
 .tabela-materiais tr:hover {
@@ -141,5 +142,11 @@ main {
   .logo {
     justify-content: center;
     width: 100%;
+  }
+
+  .tabela-materiais th,
+  .tabela-materiais td {
+    padding: 12px 8px;
+    font-size: 0.95rem;
   }
 }
