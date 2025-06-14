@@ -43,22 +43,17 @@ function exibirDataAtual() {
     timeStyle: 'short'
   });
   const topo = document.querySelector(".header p");
-  topo.innerHTML = `  ${dataFormatada}`;
+  topo.innerHTML = `${dataFormatada}`;
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   atualizarDashboard();
   exibirDataAtual();
-});
 
-document.addEventListener("DOMContentLoaded", () => {
   const toggle = document.getElementById("menuToggle");
   const navLinks = document.getElementById("navLinks");
 
   toggle.addEventListener("click", () => {
     navLinks.classList.toggle("active");
   });
-
-  atualizarDashboard();
-  exibirDataAtual();
 });
