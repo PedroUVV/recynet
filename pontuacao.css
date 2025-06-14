@@ -155,7 +155,13 @@ main {
     font-size: 1rem;
   }
 
+  .tabela-container {
+    overflow-x: auto;
+  }
+
   .tabela-materiais {
+    width: 100%;
+    min-width: 600px;
     font-size: 0.9rem;
   }
 }
