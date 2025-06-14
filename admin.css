@@ -1,3 +1,4 @@
+/* === RESET & BASE === */
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +11,7 @@ body {
   color: #2e2e2e;
 }
 
+/* === CONTAINER PADRÃO === */
 .container {
   width: 90%;
   max-width: 1200px;
@@ -17,7 +19,7 @@ body {
   padding: 2rem 0;
 }
 
-/* Header com GRADIENTE */
+/* === HEADER COM GRADIENTE === */
 .header {
   background: linear-gradient(90deg, #7cbf64, #4c9141);
   color: white;
@@ -35,7 +37,7 @@ body {
   font-size: 1rem;
 }
 
-/* Cards como BOTÕES com ÍCONES */
+/* === DASHBOARD CARDS === */
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -72,7 +74,7 @@ body {
   font-size: 1.2rem;
 }
 
-/* GRÁFICO com gradiente */
+/* === GRÁFICO DE BARRAS === */
 .grafico h2 {
   margin-bottom: 1rem;
   color: #4c9141;
@@ -108,10 +110,14 @@ body {
   color: #333;
 }
 
-/* Tabela */
+/* === TABELA RELATÓRIO === */
 .tabela-relatorio h2 {
   margin-bottom: 1rem;
   color: #4c9141;
+}
+
+.tabela-container {
+  overflow-x: auto;
 }
 
 table {
@@ -135,6 +141,7 @@ th {
   color: #2f6627;
 }
 
+/* === FOOTER === */
 footer {
   text-align: center;
   padding: 1rem;
@@ -150,7 +157,7 @@ footer {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 9999;
 }
 
 .nav-container {
@@ -204,7 +211,7 @@ footer {
   width: 100%;
 }
 
-/* RESPONSIVO */
+/* === RESPONSIVO === */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
