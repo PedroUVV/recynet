@@ -96,35 +96,37 @@ main {
 
 /* ========== TABELA DE MATERIAIS ========== */
 .tabela-container {
+  width: 100%;
   overflow-x: auto;
 }
 
 .tabela-materiais {
   width: 100%;
-  min-width: 600px;
   border-collapse: collapse;
   margin-top: 20px;
+  min-width: 350px;
   background: white;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  table-layout: fixed;
 }
 
 .tabela-materiais thead {
   background-color: #2e7d32;
 }
 
-.tabela-materiais th {
-  color: white;
-  text-align: left;
-  padding: 15px;
-  font-size: 1rem;
-}
-
+.tabela-materiais th,
 .tabela-materiais td {
   padding: 16px 15px;
   border-bottom: 1px solid #e0e0e0;
   font-size: 0.95rem;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.tabela-materiais th {
+  color: white;
 }
 
 .tabela-materiais tr:hover {
