@@ -4,11 +4,11 @@ const dados = {
   pontos: 1583200,
   usuarios: 978,
   materiais: {
-    Papel: 1200,
-    Plástico: 860,
-    Vidro: 450,
-    Metal: 320,
-    Eletrônicos: 610,
+    Papel: 2000,
+    Plástico: 1600,
+    Vidro: 800,
+    Metal: 450,
+    Eletrônicos: 1200,
   }
 };
 
@@ -57,3 +57,4 @@ document.addEventListener("DOMContentLoaded", () => {
     navLinks.classList.toggle("active");
   });
 });
+
