@@ -53,17 +53,7 @@ recynet/
 ## 👥 Equipe
 
 - **Pedro Cauã Andrade Caetano**  
-  (desenvolvedor principal – HTML, CSS e JavaScript)
-
-- **Erick Dias Duque**  
-  (colaborador em CSS e documentação)
-
-- **João Victor Almeida Filho**  
-  (colaborador em JavaScript e MER)
-
-> *Observação: Os membros Erick e João irão contribuir com a criação do MER e dos documentos PDF do projeto.*
-
----
+  (desenvolvedor principal)
 
 ## 🔐 Contas de Teste
 
@@ -80,13 +70,9 @@ Use as credenciais abaixo para acessar os perfis no sistema:
 > Acesso à visualização de pontos, relatórios pessoais, resgate de recompensas e histórico de reciclagem.
 
 
-## 📌 Observações finais
-
-Este projeto foi desenvolvido como parte do desafio interdisciplinar do curso de **Ciência da Computação - Universidade Vila Velha (UVV)**.
-
 Protótipo original no Figma:  
 [🔗 Acessar protótipo](https://www.figma.com/design/JGaJOQJrEzT8MMGyTrITOE/RecyNet?node-id=0-1)
 
 ---
 
-© 2025 Fortes Engenharia — Projeto acadêmico UVV.
+© 2025 Projeto RecyNet
