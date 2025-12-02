@@ -8,13 +8,13 @@ O projeto simula funcionalidades administrativas e comuns, com interface intuiti
 ## 🔐 Contas de Teste
 
 ### **Administrador**
-- **Email:** admin@fortes.com.br  
-- **Senha:** 123456  
+- **Email:** `admin@fortes.com.br`  
+- **Senha:** `123456`  
 _Acesso ao painel de administração teste._
 
 ### **Cooperado (Usuário Comum)**
-- **Email:** cooperativas@fortes.com.br  
-- **Senha:** 123456  
+- **Email:** `cooperativas@fortes.com.br`  
+- **Senha:** `123456`  
 _Acesso à visualização de pontos, ranking, notícias, locais de coleta e resgate das recompensas._
 
 ---
