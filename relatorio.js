@@ -25,11 +25,11 @@ const dadosPorMes = {
     "7": [100, 55, 60, 22, 10],
     "8": [85, 50, 20, 35, 7],
     "9": [50, 90, 24, 13, 6],
-    "10": [65, 70, 45. 26, 4]
+    "10": [65, 70, 45, 26, 4]
   }
 };
 
-const mesesLinha = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun' 'Jul' 'Ago' 'Set' 'Out' 'Nov'];
+const mesesLinha = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov'];
 const totaisLinha = [270, 250, 235, 280, 215, 210, 431, 163, 200, 240, 210];
 
 function criarGraficos(mes = "1", ano = "2025") {
@@ -101,6 +101,6 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("btnBaixar").addEventListener("click", () => {
     window.print();
   });
-
 });
+
 
