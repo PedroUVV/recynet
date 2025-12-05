@@ -29,8 +29,8 @@ const dadosPorMes = {
   }
 };
 
-const mesesLinha = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun'];
-const totaisLinha = [270, 250, 235, 280, 215, 210];
+const mesesLinha = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun' 'Jul' 'Ago' 'Set' 'Out' 'Nov'];
+const totaisLinha = [270, 250, 235, 280, 215, 210, 431, 163, 200, 240, 210];
 
 function criarGraficos(mes = "1", ano = "2025") {
   const ctxBarra = document.getElementById("graficoBarras").getContext("2d");
@@ -103,3 +103,4 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+
