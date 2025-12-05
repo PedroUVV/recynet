@@ -21,7 +21,7 @@ _Acesso à visualização de pontos, ranking, notícias, locais de coleta e resg
 
 ## 🔗 Projeto Online
 
-➡️ **https://pedrouvv.github.io/recynet/**
+➡️ **https://pedrinhocoder.github.io/recynet/**
 
 ---
 
